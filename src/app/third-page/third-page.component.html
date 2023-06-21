@@ -1,0 +1,6 @@
+<div>{{'Stored Data: ' + storedData}}</div>
+<button (click)="incrementStoredData()">Increment Stored Data</button>
+
+<div>{{'Another Stored Data: ' + (anotherStoredData$ | async)}}</div>
+<input type="text" [(ngModel)]="input_anotherStoredData" />
+<button (click)="setAnotherStoredData()">Change Another Stored Data</button>
